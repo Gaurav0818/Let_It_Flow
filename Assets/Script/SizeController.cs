@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SizeController : MonoBehaviour
 {
-    float time=3;
+    float time=1000;
     private void Update()
     {
         time = time - Time.deltaTime;

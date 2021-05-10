@@ -5,7 +5,6 @@ using UnityEngine;
 public class VelocityController : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float maxGroundVelocity;
     public string groundType;
     
     void Start()
@@ -16,25 +15,30 @@ public class VelocityController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (FindObjectOfType<CheckGround>().IsGrounded() == true)
         {
-            if (groundType == "N_Ground")
+            if (Input.GetKey(KeyCode.D))
             {
-                rb.velocity = rb.velocity + new Vector2(0.15f, -0.5f);
+                if (groundType == "N_Ground")
+                {
+                    rb.velocity = rb.velocity + new Vector2(0.15f, -0.5f);
+                }
+                else if (groundType == "HF_Ground")
+                {
+                    rb.velocity = rb.velocity + new Vector2(0.1f, 0);
+                }
             }
-            else if (groundType == "HF_Ground")
+            if (Input.GetKey(KeyCode.A))
             {
-                rb.velocity = rb.velocity + new Vector2(0.1f, 0);
+                rb.velocity = rb.velocity + new Vector2(-0.15f, -0.5f);
             }
-            
-        }
 
-        /*if (rb.velocity.x > maxGroundVelocity)
-        {
-            if(Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKey(KeyCode.Space))
             {
-                rb.velocity = rb.velocity + new Vector2(1f,0);
+                rb.velocity = rb.velocity + Vector2.up * 1f;
             }
-        }*/
+
+        }
+       
     }
 }
