@@ -11,13 +11,16 @@ public class FrictionController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (collision.gameObject.tag == "N_Ground")
         {
-            rb.angularDrag = 1;
+            FindObjectOfType<VelocityController>().groundType = "N_Ground";
+            rb.drag = 0.5f;
         }
         if (collision.gameObject.tag == "HF_Ground")
         {
-            rb.angularDrag = 3;
+            FindObjectOfType<VelocityController>().groundType = "HF_Ground";
+            rb.drag = 3;
         }
     }
 }
