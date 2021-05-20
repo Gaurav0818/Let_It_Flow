@@ -46,7 +46,7 @@ public class VelocityController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Space))
             {
-                rb.velocity = rb.velocity + Vector2.up * 1f;
+                rb.velocity = rb.velocity + Vector2.up * 3f;
             }
 
         }
@@ -82,7 +82,14 @@ public class VelocityController : MonoBehaviour
             {
                 if (startDash_Time > dashTime)
                 {
-                    rb.velocity = new Vector2(oldspeed.x * 2, 0.1f);
+                    if (oldspeed.x == 0f)
+                    {
+                        //rb.velocity = new Vector2(0.2f, 0.1f);
+                    }
+                    else
+                    {
+                        rb.velocity = new Vector2(oldspeed.x * 2, 0.1f);
+                    }
                     ifDash = false;
                 }
             }
