@@ -12,11 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float slopedownSpeed;
 
     bool isjump = false;
-    bool isdash = false;
-    bool canDash = true;
-
-    public float dashTimeGap;
-    float dashTimer=0;
+    
 
     void Start()
     {
@@ -49,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            //playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * dashSpeed * Time.deltaTime, playerRB.velocity.y);
             isdash = true;
         }
 
@@ -56,7 +53,16 @@ public class PlayerMovement : MonoBehaviour
 
     void move()
     {
-        playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * speed * Time.deltaTime, playerRB.velocity.y );
+        if (speedBoostTimer < speedBoostTime && dashDir==horizontal)
+        {
+            speedBoostTimer = speedBoostTimer + Time.deltaTime;
+            playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal *4* speed * Time.deltaTime, playerRB.velocity.y);
+        }
+        else
+        {
+            playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * speed * Time.deltaTime, playerRB.velocity.y);
+        }
+       
     }
 
     void jump()
@@ -65,17 +71,35 @@ public class PlayerMovement : MonoBehaviour
         {
             if (FindObjectOfType<CheckGround>().IsGrounded()==true)
             {
-                playerRB.velocity = Vector2.up * jumpSpeed;
+                playerRB.velocity = playerRB.velocity+ Vector2.up * jumpSpeed;
             }
             isjump = false;
         }
    
     }
 
+    bool isdash = false;
+    bool canDash = true;
+    bool startDashTime = false;
+
+    public float speedBoostTime;
+    float speedBoostTimer=5;
+    float dashDir;
+    public float dashSpeed;
+    public float dashTimeGap;
+    float dashTimer = 0f;
+
     void dash()
     {
         if(isdash == true)
         {
+            if (canDash == true)
+            {
+                playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * dashSpeed * Time.deltaTime, playerRB.velocity.y);
+                startDashTime = true;
+                speedBoostTimer = 0;
+                dashDir = horizontal;
+            }
             
             isdash = false;
         }
@@ -83,13 +107,25 @@ public class PlayerMovement : MonoBehaviour
 
     void dashTime()
     {
-        if (dashTimer == 0)
+        if (dashTimer == 0f)
         {
             canDash = true;
-            if (isdash == true)
-            {
 
+
+        }
+        if (startDashTime == true)
+        {
+            canDash = false;
+
+            if (dashTimer < dashTimeGap)
+            {
+                dashTimer = dashTimer + Time.deltaTime;
             }
+            else
+            {
+                dashTimer = 0f;
+                startDashTime = false;
+            } 
         }
 
     }
