@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 94fae2199c7401e4594b59a3c575e4f5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 252716057806441453
+    second: Tree(Life)_0
+  - first:
+      213: -3952805450426891738
+    second: Tree(Life)_1
+  - first:
+      213: 6610698141072931531
+    second: Tree(Life)_2
+  - first:
+      213: -1784407539440580578
+    second: Tree(Life)_3
+  - first:
+      213: 9061873395745407910
+    second: Tree(Life)_4
+  - first:
+      213: 311868832252355317
+    second: Tree(Life)_5
+  - first:
+      213: -8448358380507994332
+    second: Tree(Life)_6
+  - first:
+      213: -8109434942723221799
+    second: Tree(Life)_7
+  - first:
+      213: -4137355990103504206
+    second: Tree(Life)_8
+  - first:
+      213: -1853829754112256466
+    second: Tree(Life)_9
+  - first:
+      213: 3034418564833102127
+    second: Tree(Life)_10
+  - first:
+      213: -306013818682345063
+    second: Tree(Life)_11
+  - first:
+      213: -7292001765918617211
+    second: Tree(Life)_12
+  - first:
+      213: -8177338716385913230
+    second: Tree(Life)_13
+  - first:
+      213: 1501073409058444124
+    second: Tree(Life)_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +85,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +109,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +130,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tree(Life)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 269.4
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb07966ae3d18300800000000000000
+      internalID: 252716057806441453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622c31db260d429c0800000000000000
+      internalID: -3952805450426891738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_2
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcabcff2feaedbb50800000000000000
+      internalID: 6610698141072931531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_3
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e188d1d0cc28c37e0800000000000000
+      internalID: -1784407539440580578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3c7f077dd32cd70800000000000000
+      internalID: 9061873395745407910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_5
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2eae2fc0bf35400800000000000000
+      internalID: 311868832252355317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_6
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42760a270d661ca80800000000000000
+      internalID: -8448358380507994332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_7
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d697dd92ef757f80800000000000000
+      internalID: -8109434942723221799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_8
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bacb8cc5a82596c0800000000000000
+      internalID: -4137355990103504206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_9
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 0
+        width: 269.4
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26d61029afd546e0800000000000000
+      internalID: -1853829754112256466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_10
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 0
+        width: 269.4
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f294ab09b9b6c1a20800000000000000
+      internalID: 3034418564833102127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_11
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 0
+        width: 269.4
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999f311ad02d0cbf0800000000000000
+      internalID: -306013818682345063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_12
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 0
+        width: 269.4
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58156e0570b9dca90800000000000000
+      internalID: -7292001765918617211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_13
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 0
+        width: 269.4
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276d4c943c1448e80800000000000000
+      internalID: -8177338716385913230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree(Life)_14
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 0
+        width: 269
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5396b00052e4d410800000000000000
+      internalID: 1501073409058444124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -86,7 +458,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
