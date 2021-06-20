@@ -14,6 +14,14 @@ public class FallowPlayer : MonoBehaviour
     
     void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y,-10f);
+        if (gameObject.tag == "Image")
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y-0.1f, 0f);
+        }
+        else
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y+ 3f, -10f);
+        }
+ 
     }
 }

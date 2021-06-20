@@ -2,26 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D playerRB;
 
     public float speed;
     public float jumpSpeed;
-    float horizontal;
+    public float horizontal;
     public float slopedownSpeed;
+
+    public float SprintSpeed;
+    public bool isSprint = false;
+    
+    public int energy;
+    public int maxEnergy;
+    public int energyWithTime;
+    public int energyForJump;
+    public int energyForSpeedpush;
+    public float energyWithTimeInterval;
+    public float energyWithSprintTimeInterval;
+    float energyTimer=0;
+
+    
 
     bool isjump = false;
     
 
     void Start()
     {
+        FindObjectOfType<EnergyBar>().maxEnergy = maxEnergy;
+        energy = maxEnergy;
         playerRB = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
+        FindObjectOfType<EnergyBar>().energy = energy;
         readupdate();
+        energyUpdateOverTime();
     }
 
     void FixedUpdate()
@@ -29,10 +48,44 @@ public class PlayerMovement : MonoBehaviour
 
         move();
         jump();
-        dash();
+        
         
     }
 
+    void energyUpdateOverTime()
+    {
+        if (isSprint == true)
+        {
+            if (energyTimer < energyWithSprintTimeInterval)
+            {
+                energyTimer = energyTimer + Time.deltaTime;
+            }
+            else
+            {
+                energy = energy - energyForSpeedpush;
+                energyTimer = 0;
+                FindObjectOfType<EnergyMinusPrefab>().InstantiateFor2();
+            }
+        }
+        if (isSprint == false)
+        {
+            if (energyTimer < energyWithTimeInterval)
+            {
+                energyTimer = energyTimer + Time.deltaTime;
+            }
+            else
+            {
+                energy = energy - energyWithTime;
+                energyTimer = 0;
+                FindObjectOfType<EnergyMinusPrefab>().InstantiateFor1();
+            }
+
+        }
+        
+
+
+
+    }
     void readupdate()
     {
         horizontal = 0;
@@ -45,23 +98,29 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            //playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * dashSpeed * Time.deltaTime, playerRB.velocity.y);
-            isdash = true;
+            isSprint = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            isSprint = false;
         }
 
     }
 
     void move()
     {
-        if (speedBoostTimer < speedBoostTime && dashDir==horizontal)
+        if (isSprint == true)
         {
-            speedBoostTimer = speedBoostTimer + Time.deltaTime;
-            playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal *4* speed * Time.deltaTime, playerRB.velocity.y);
+            playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * SprintSpeed * Time.deltaTime, playerRB.velocity.y);
         }
-        else
+        else if (isSprint == false)
         {
+
             playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * speed * Time.deltaTime, playerRB.velocity.y);
+  
+
         }
+        
        
     }
 
@@ -72,62 +131,11 @@ public class PlayerMovement : MonoBehaviour
             if (FindObjectOfType<CheckGround>().IsGrounded()==true)
             {
                 playerRB.velocity = playerRB.velocity+ Vector2.up * jumpSpeed;
+                energy = energy - energyForJump;
+                FindObjectOfType<EnergyMinusPrefab>().InstantiateFor5();
             }
             isjump = false;
         }
    
     }
-
-    bool isdash = false;
-    bool canDash = true;
-    bool startDashTime = false;
-
-    public float speedBoostTime;
-    float speedBoostTimer=5;
-    float dashDir;
-    public float dashSpeed;
-    public float dashTimeGap;
-    float dashTimer = 0f;
-
-    void dash()
-    {
-        if(isdash == true)
-        {
-            if (canDash == true)
-            {
-                playerRB.velocity = new Vector2(playerRB.velocity.x + horizontal * dashSpeed * Time.deltaTime, playerRB.velocity.y);
-                startDashTime = true;
-                speedBoostTimer = 0;
-                dashDir = horizontal;
-            }
-            
-            isdash = false;
-        }
-    }
-
-    void dashTime()
-    {
-        if (dashTimer == 0f)
-        {
-            canDash = true;
-
-
-        }
-        if (startDashTime == true)
-        {
-            canDash = false;
-
-            if (dashTimer < dashTimeGap)
-            {
-                dashTimer = dashTimer + Time.deltaTime;
-            }
-            else
-            {
-                dashTimer = 0f;
-                startDashTime = false;
-            } 
-        }
-
-    }
-
 }

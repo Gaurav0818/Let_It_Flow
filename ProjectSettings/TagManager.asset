@@ -6,6 +6,7 @@ TagManager:
   tags:
   - N_Ground
   - HF_Ground
+  - Image
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - player
   - ground
-  - 
+  - Image
   - 
   - 
   - 
