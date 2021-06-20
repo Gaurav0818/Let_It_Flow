@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public float energyWithTimeInterval;
     public float energyWithSprintTimeInterval;
     float energyTimer=0;
+    public bool fillEnergy;
 
     
 
@@ -41,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         FindObjectOfType<EnergyBar>().energy = energy;
         readupdate();
         energyUpdateOverTime();
+        FillEnergy();
     }
 
     void FixedUpdate()
@@ -50,6 +52,15 @@ public class PlayerMovement : MonoBehaviour
         jump();
         
         
+    }
+    void FillEnergy()
+    {
+        if (fillEnergy == true)
+        {
+            FindObjectOfType<EnergyBar>().fillEnergy=true;
+            fillEnergy = false;
+            energy = maxEnergy;
+        }
     }
 
     void energyUpdateOverTime()

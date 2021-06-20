@@ -36,16 +36,16 @@ public class EnergyMinusPrefab : MonoBehaviour
     public void InstantiateFor1()
     {
         for1 = Instantiate(prefabFor1);
-        for1.transform.position = GameObject.Find("Circle").transform.position + new Vector3(0f, 0.1f, 0f);
+        for1.transform.position = GameObject.Find("PlayerBody").transform.position + new Vector3(0f, 0.1f, 0f);
     }
     public void InstantiateFor2()
     {
         for2 = Instantiate(prefabFor2);
-        for2.transform.position = GameObject.Find("Circle").transform.position + new Vector3(0f, 0.1f, 0f);
+        for2.transform.position = GameObject.Find("PlayerBody").transform.position + new Vector3(0f, 0.1f, 0f);
     }
     public void InstantiateFor5()
     {
         for5 = Instantiate(prefabFor5);
-        for5.transform.position = GameObject.Find("Circle").transform.position + new Vector3(0f, 0.1f, 0f);
+        for5.transform.position = GameObject.Find("PlayerBody").transform.position + new Vector3(0f, 0.1f, 0f);
     }
 }
