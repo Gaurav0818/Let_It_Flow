@@ -11,13 +11,17 @@ public class EnergyBar : MonoBehaviour
     public bool fillEnergy;
 
 
+
+
     public GameObject energyFullPrefab;
     GameObject energyFullImage;
 
     float percentage;
 
     public Animator animator;
-    
+
+   
+
 
     private void Update()
     {
@@ -33,6 +37,11 @@ public class EnergyBar : MonoBehaviour
             EnergyFull();
             fillEnergy = false;
         }
+
+        if (FindObjectOfType<PlayerMovement>().isDead == true)
+        {
+
+        }
     }
     public void EnergyFull()
     {
@@ -42,24 +51,36 @@ public class EnergyBar : MonoBehaviour
 
     public void statusAnimation()
     {
-        if (percentage > 69)
+        if(FindObjectOfType<PlayerMovement>().isDead != true)
         {
-            animator.SetBool("100", true);
+            if (percentage > 69)
+            {
+                animator.SetBool("100", true);
+                animator.SetBool("50", false);
+                animator.SetBool("20", false);
+            }
+            else if (percentage > 19 && percentage < 70)
+            {
+                animator.SetBool("100", false);
+                animator.SetBool("50", true);
+                animator.SetBool("20", false);
+            }
+            else if (percentage < 20)
+            {
+                animator.SetBool("100", false);
+                animator.SetBool("50", false);
+                animator.SetBool("20", true);
+            }
+        }
+        else
+        {
+            animator.SetBool("isDead", true);
+            animator.SetBool("100", false);
             animator.SetBool("50", false);
             animator.SetBool("20", false);
         }
-        else if (percentage > 19 && percentage<70)
-        {
-            animator.SetBool("100", false);
-            animator.SetBool("50", true);
-            animator.SetBool("20", false);
-        }
-        else if (percentage < 20)
-        {
-            animator.SetBool("100", false);
-            animator.SetBool("50", false);
-            animator.SetBool("20", true);
-        }
+
+        
     }
 
     public void perCalculator()

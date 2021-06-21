@@ -121,6 +121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnergyBar
       objectReference: {fileID: 0}
+    - target: {fileID: 6715291598157742134, guid: 5d462d8ea02e4b947b7e88913664f8c2,
+        type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715291598157742135, guid: 5d462d8ea02e4b947b7e88913664f8c2,
         type: 3}
       propertyPath: m_Pivot.x

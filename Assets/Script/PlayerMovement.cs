@@ -25,7 +25,9 @@ public class PlayerMovement : MonoBehaviour
     float energyTimer=0;
     public bool fillEnergy;
 
-    
+
+    public bool isDead;
+
 
     bool isjump = false;
     
@@ -39,20 +41,30 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        FindObjectOfType<EnergyBar>().energy = energy;
-        readupdate();
-        energyUpdateOverTime();
-        FillEnergy();
+        if (energy >0) 
+        {
+            FindObjectOfType<EnergyBar>().energy = energy;
+            readupdate();
+            energyUpdateOverTime();
+            FillEnergy();
+        }
+        else if (energy == 0 || energy <0)
+        {
+            isDead = true;
+            playerRB.velocity = new Vector2(0,playerRB.velocity.y);
+        }
     }
 
     void FixedUpdate()
     {
-
-        move();
-        jump();
-        
-        
+        if (energy > 0)
+        {
+            move();
+            jump();
+        }
+      
     }
+
     void FillEnergy()
     {
         if (fillEnergy == true)

@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree
       objectReference: {fileID: 0}
+    - target: {fileID: 3869206931255049170, guid: 93d4503d62caa8d4ab1f241b63efaff6,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1894460379}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d4503d62caa8d4ab1f241b63efaff6, type: 3}
 --- !u!4 &986894194 stripped
@@ -27548,6 +27553,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f70399a7ef866564e9c8fe2b321d862d, type: 3}
+--- !u!1 &1894460379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202126012995595694, guid: 500f253c4863f6c4baf977e8f7cf07dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 4202126011911912025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1959640271
 PrefabInstance:
   m_ObjectHideFlags: 0

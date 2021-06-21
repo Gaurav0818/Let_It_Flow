@@ -203,7 +203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &533198991
 MonoBehaviour:
@@ -232,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 303885520224828320, guid: 93d4503d62caa8d4ab1f241b63efaff6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 303885520224828320, guid: 93d4503d62caa8d4ab1f241b63efaff6,
         type: 3}
@@ -289,6 +289,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree
       objectReference: {fileID: 0}
+    - target: {fileID: 3869206931255049170, guid: 93d4503d62caa8d4ab1f241b63efaff6,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1937513852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d4503d62caa8d4ab1f241b63efaff6, type: 3}
 --- !u!1 &593424535
@@ -472,6 +477,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4587765640947410163, guid: c16ad94f4d71fe64f92934624544a34b,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1937513852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c16ad94f4d71fe64f92934624544a34b, type: 3}
 --- !u!1001 &1086331671
@@ -12776,6 +12786,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 500f253c4863f6c4baf977e8f7cf07dc, type: 3}
+--- !u!1 &1937513852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202126012995595694, guid: 500f253c4863f6c4baf977e8f7cf07dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1937513851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4270750194453220956
 PrefabInstance:
   m_ObjectHideFlags: 0
