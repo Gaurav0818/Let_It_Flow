@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 86d2525f8472eca4c907525d0a236b43
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4155761512986072741
+    second: MovingTree_0
+  - first:
+      213: 7934485712079584871
+    second: MovingTree_1
+  - first:
+      213: 3984436118507610918
+    second: MovingTree_2
+  - first:
+      213: 3240194060919080275
+    second: MovingTree_3
+  - first:
+      213: 2492189264512963474
+    second: MovingTree_4
+  - first:
+      213: -1594523686810608957
+    second: MovingTree_5
+  - first:
+      213: 5554888045603912084
+    second: MovingTree_6
+  - first:
+      213: 7179363990357269240
+    second: MovingTree_7
+  - first:
+      213: -1441796255414525828
+    second: MovingTree_8
+  - first:
+      213: -6980988808652843083
+    second: MovingTree_9
+  - first:
+      213: 2803311937051949611
+    second: MovingTree_10
+  - first:
+      213: -6353334205326955995
+    second: MovingTree_11
+  - first:
+      213: 6376939306862588399
+    second: MovingTree_12
+  - first:
+      213: -2503925743608209348
+    second: MovingTree_13
+  - first:
+      213: 8414610506625845693
+    second: MovingTree_14
+  - first:
+      213: -1158703509906812241
+    second: MovingTree_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MovingTree_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59a93f0ce4c356c0800000000000000
+      internalID: -4155761512986072741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e7ae767b4fc1e60800000000000000
+      internalID: 7934485712079584871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623e1e11a8f8b4730800000000000000
+      internalID: 3984436118507610918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3558964c45b77fc20800000000000000
+      internalID: 3240194060919080275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29356509ee8069220800000000000000
+      internalID: 2492189264512963474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca15bda72d1fd9e0800000000000000
+      internalID: -1594523686810608957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499f8451f3de61d40800000000000000
+      internalID: 5554888045603912084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_7
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fad976e28932a360800000000000000
+      internalID: 7179363990357269240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c706785d1f5bdfbe0800000000000000
+      internalID: -1441796255414525828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_9
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b715475aab8e1f90800000000000000
+      internalID: -6980988808652843083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_10
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2af79aaa5d57e620800000000000000
+      internalID: 2803311937051949611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_11
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ae520a33c64d7a0800000000000000
+      internalID: -6353334205326955995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_12
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe135cb53807f7850800000000000000
+      internalID: 6376939306862588399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_13
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30e6447dc4404dd0800000000000000
+      internalID: -2503925743608209348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_14
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db904ba5ca3b6c470800000000000000
+      internalID: 8414610506625845693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovingTree_15
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 77.4375
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2910cfb457befe0800000000000000
+      internalID: -1158703509906812241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
