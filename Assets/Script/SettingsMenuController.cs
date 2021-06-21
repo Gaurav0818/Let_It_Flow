@@ -1,18 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenuController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject controls;
+    public GameObject gameElements;
+    public void OnMainMenuButtonPress()
     {
-        
+        Debug.Log("menu button pressed");
+        SceneManager.LoadScene(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnControlsButtonPress()
     {
-        
+        controls.SetActive(true);
+    }
+    public void OnGameElementsButtonPress()
+    {
+        gameElements.SetActive(true);
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Scene sceneLoaded = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(sceneLoaded.buildIndex);
+        }
     }
 }
