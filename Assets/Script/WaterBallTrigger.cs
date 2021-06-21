@@ -15,10 +15,20 @@ public class WaterBallTrigger : MonoBehaviour
 
     float Destroytime = 0;
     public bool destroyObject = false;
+
+    public AudioSource getEnergyAudio;
+    int audioCount = 0;
+
     private void Update()
     {
         if( destroyObject == true)
         {
+            if (audioCount == 0)
+            {
+                getEnergyAudio.Play();
+                audioCount = 1;
+            }
+
             Destroytime += Time.deltaTime;
             if (Destroytime > 0.3f)
             {

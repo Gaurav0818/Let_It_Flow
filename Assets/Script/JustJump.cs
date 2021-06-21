@@ -7,6 +7,9 @@ public class JustJump : MonoBehaviour
     Rigidbody2D rb;
     public float jumpSpeed;
     float jumptimer = 0;
+
+    public AudioSource jumpAudio;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +22,7 @@ public class JustJump : MonoBehaviour
         if (jumptimer > 1f)
         {
             rb.velocity = Vector2.up * jumpSpeed;
+            jumpAudio.Play();
             jumptimer = 0;
         }
         jumptimer = jumptimer + Time.deltaTime;

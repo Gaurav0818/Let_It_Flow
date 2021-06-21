@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
     public bool fillEnergy;
 
 
+    public AudioSource jumpAudio;
+
+
     public bool isDead;
 
 
@@ -155,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 playerRB.velocity = playerRB.velocity+ Vector2.up * jumpSpeed;
                 energy = energy - energyForJump;
+                jumpAudio.Play();
                 FindObjectOfType<EnergyMinusPrefab>().InstantiateFor5();
             }
             isjump = false;

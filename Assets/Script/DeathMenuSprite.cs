@@ -7,6 +7,7 @@ public class DeathMenuSprite : MonoBehaviour
 
     public void OnMainMenuButtonPress()
     {
+        Debug.Log("menu button pressed");
         SceneManager.LoadScene(0);
     }
     public void OnRestartButtonPress()

@@ -12,12 +12,22 @@ public class lvlupMenuCall : MonoBehaviour
     GameObject lvluppanal;
     public GameObject canvas;
 
+    public AudioSource lvlupAudio;
+    int audioCount = 0;
+    
+
     private void Update()
     {
         lvlup = GetComponent<TreeAnimationController>().lvlup;
         
         if (lvlup == true)
         {
+            if(audioCount==0)
+            {
+                lvlupAudio.Play();
+                audioCount = 1;
+            }
+            
             if (lvluptimer < lvlupTime)
             {
                 lvluptimer = lvluptimer + Time.deltaTime;
